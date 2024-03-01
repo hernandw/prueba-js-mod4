@@ -1,11 +1,13 @@
 import Animal from "./animal.js";
+const player = document.getElementById("player");
 
 class Leon extends Animal {
     constructor(name, age, images, comments, sound) {
         super(name, age, images, comments, sound);
     }
     rugir() {
-        return `El ${this._name} ruge`;
+      player.src = `${this._sound}`;
+      player.play();
     }
 }
 
@@ -14,7 +16,9 @@ class Lobo extends Animal {
     super(name, age, images, comments, sound);
   }
   aullar() {
-    return `El ${this._name} aulla`;
+    player.src = `${this._sound}`;
+      player.play();
+    
   }
 }
 
@@ -23,7 +27,8 @@ class Oso extends Animal {
     super(name, age, images, comments, sound);
   }
   gruñir() {
-    return `El ${this._name} gruñe`;
+     player.src = `${this._sound}`;
+     player.play();
   }
 }
 
@@ -32,7 +37,8 @@ class Serpiente extends Animal {
     super(name, age, images, comments, sound);
   }
   sisear() {
-    return `El ${this._name} sisea`;
+     player.src = `${this._sound}`;
+     player.play();
   }
 }
 
@@ -41,7 +47,8 @@ class Aguila extends Animal {
     super(name, age, images, comments, sound);
   }
   chillar() {
-    return `El ${this._name} chilla`;
+     player.src = `${this._sound}`;
+     player.play();
   }
 }
 

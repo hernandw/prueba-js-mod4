@@ -1,0 +1,1 @@
+import { Leon, Lobo, Oso, Serpiente, Aguila } from "./modulo/tipo.js";

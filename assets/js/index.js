@@ -108,5 +108,25 @@ window.playSound = (name)=>{
   }
 }
 
+window.modalDetails = (i) => {
+  const modalBody = document.getElementsByClassName("modal-body")[0];
+const animal = animales[i];
+modalBody.innerHTML = `
+    <div class="px-3 pb-2">
+    <div class="card w-50 m-auto bg-dark text-white border-0">
+      <img
+        src="${animal._images}"
+        class="d-block m-auto w-100"
+      />
+      <div class="card-body text-center">
+        <h6 class="card-text ">${animal._age}</h6>
+        <h6 class="card-text m-0">Comentarios</h6>
+        <hr/>
+        <p>${animal._comments}</p>
+      </div>
+    </div>
+    </div>
+    `;
+} 
 
     
